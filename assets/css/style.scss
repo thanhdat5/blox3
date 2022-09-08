@@ -46,7 +46,7 @@ header {
         height: 34px;
       }
     }
-    .navbar-toggler{
+    .navbar-toggler {
       box-shadow: none !important;
       outline: 0 !important;
       background-color: $white-color;
@@ -62,7 +62,7 @@ header {
         margin-left: auto;
         .navbar-nav {
           .nav-item {
-            .nav-link{
+            .nav-link {
               font-weight: bold;
             }
           }
@@ -144,11 +144,11 @@ main {
         border-radius: 8px 0px 0px 8px;
         outline: 0 !important;
         box-shadow: none !important;
-        transition: all ease-in-out .3s;
+        transition: all ease-in-out 0.3s;
         &::placeholder {
           color: $placeholder-color;
         }
-        &:focus{
+        &:focus {
           border-color: $button-bg-color;
         }
       }
@@ -170,6 +170,10 @@ main {
     .bx-banner-image {
       margin-bottom: -300px;
       max-height: 85vh;
+      animation-name: bounce;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
       @media (max-width: 991px) {
         margin-bottom: 0;
       }
@@ -237,5 +241,19 @@ footer {
 @media (max-width: 767px) {
   .container {
     --bs-gutter-x: 40px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

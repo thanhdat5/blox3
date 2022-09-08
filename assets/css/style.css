@@ -173,6 +173,14 @@ main .bx-banner .bx-banner-form .btn {
 main .bx-banner .bx-banner-image {
   margin-bottom: -300px;
   max-height: 85vh;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 @media (max-width: 991px) {
   main .bx-banner .bx-banner-image {
@@ -244,5 +252,27 @@ footer .bx-footer-bottom ul li a:hover {
 @media (max-width: 767px) {
   .container {
     --bs-gutter-x: 40px;
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
