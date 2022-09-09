@@ -5,12 +5,13 @@ $text-color: #1c2932;
 $placeholder-color: #949494;
 $white-color: #fff;
 $black-color: #000;
+$gray-color:#5C5C5C;
 $button-bg-color: #1c2932;
 $input-bg-color: #fcfcfc;
 body {
   background-color: $background-color;
-  background-image: url(../images/bg.png);
-  background-size: cover;
+  // background-image: url(../images/bg.png);
+  // background-size: cover;
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -99,27 +100,28 @@ main {
       margin-top: 11.5%;
       font-family: $heading-font-family;
       font-weight: 700;
-      font-size: 56px;
-      line-height: 67px;
+      font-size: 72px;
+      line-height: 77px;
       letter-spacing: -0.02em;
       color: $text-color;
       margin-bottom: 10px;
+      white-space: nowrap;
       @media (max-width: 1399px) {
         font-size: 50px;
         line-height: 60px;
       }
       @media (max-width: 576px) {
-        font-size: 42px;
+        font-size: 32px;
         line-height: 52px;
       }
     }
     .bx-banner-description {
-      font-family: $text-font-family;
+      font-family: $text-font-family;      
       font-weight: 400;
-      font-size: 24px;
-      line-height: 35px;
+      font-size: 20px;
+      line-height: 144%;
       letter-spacing: 0.01em;
-      color: $black-color;
+      color: $gray-color;
       margin-bottom: 56px;
       @media (max-width: 576px) {
         font-size: 22px;
@@ -176,6 +178,10 @@ main {
       animation-iteration-count: infinite;
       @media (max-width: 991px) {
         margin-bottom: 0;
+        width: 550px;
+      }
+      @media(max-width:767px){
+        width: 358px;
       }
     }
   }
