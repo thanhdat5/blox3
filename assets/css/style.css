@@ -38,7 +38,7 @@ header .bx-navbar .navbar-brand {
 }
 @media (max-width: 991px) {
   header .bx-navbar .navbar-brand {
-    width: calc(100% - 80px);
+    width: calc(100% - 120px);
   }
 }
 header .bx-navbar .navbar-brand img {
@@ -106,7 +106,13 @@ main .bx-banner .bx-banner-heading {
 @media (max-width: 576px) {
   main .bx-banner .bx-banner-heading {
     font-size: 32px;
-    line-height: 52px;
+    line-height: 1.4;
+    white-space: normal;
+  }
+}
+@media (max-width: 389px) {
+  main .bx-banner .bx-banner-heading {
+    font-size: 28px;
   }
 }
 main .bx-banner .bx-banner-description {
@@ -120,14 +126,19 @@ main .bx-banner .bx-banner-description {
 }
 @media (max-width: 576px) {
   main .bx-banner .bx-banner-description {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 1.4;
   }
 }
 main .bx-banner .bx-banner-form {
   display: inline-flex;
   width: 441px;
   max-width: 100%;
+}
+@media (max-width: 767px) {
+  main .bx-banner .bx-banner-form {
+    width: auto;
+  }
 }
 main .bx-banner .bx-banner-form .form-control {
   height: 54px;
@@ -182,6 +193,7 @@ main .bx-banner .bx-banner-image {
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  max-width: 100%;
 }
 @media (max-width: 991px) {
   main .bx-banner .bx-banner-image {
@@ -209,6 +221,11 @@ footer .bx-socials {
     justify-content: center;
   }
 }
+@media (max-width: 576px) {
+  footer .bx-socials {
+    gap: 24px;
+  }
+}
 footer .bx-socials a {
   text-decoration: none;
 }
@@ -218,6 +235,11 @@ footer .bx-socials a:hover img {
 footer .bx-socials a img {
   transition: all ease-in-out 0.3s;
   transform-origin: center center;
+}
+@media (max-width: 576px) {
+  footer .bx-socials a img {
+    height: 30px;
+  }
 }
 footer .bx-footer-bottom {
   display: flex;
@@ -232,6 +254,12 @@ footer .bx-footer-bottom {
 @media (max-width: 991px) {
   footer .bx-footer-bottom {
     justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .bx-footer-bottom {
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 footer .bx-footer-bottom ul {
